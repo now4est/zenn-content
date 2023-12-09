@@ -3,13 +3,14 @@ title: "Vim でよく使う Vim じゃない機能"
 emoji: "🎄"
 type: "tech"
 topics: [Vim, zsh]
-published: false
+published: true
 ---
 
 こんにちは。[42 Tokyo](<https://42tokyo.jp/>) というパリ発のエンジニア養成機関の [2023 年度アドベントカレンダー](<https://qiita.com/advent-calendar/2023/42tokyo>) 8日目を担当します、在校生の now4est と申します。
 ([言い訳](<https://ja.wikipedia.org/wiki/30%E6%99%82%E9%96%93%E5%88%B6>)が通用しないタイムスタンプになってしまいました 🙇)
 
-7日目の昨日は、snara さんが「[コマンドラインで作曲したい！〜 MML to MIDI compiler のようなものを作ってみた〜 #Go - Qiita](<https://qiita.com/snara-42/items/547a5a63d711a290d33a>)」という記事を書かれていました。Qiita デイリーいいね数ランクイン記事です。要チェックですね。
+7日目の昨日は、snara さんが「[コマンドラインで作曲したい！〜 MML to MIDI compiler のようなものを作ってみた〜 #Go - Qiita](<https://qiita.com/snara-42/items/547a5a63d711a290d33a>)」という記事を書かれていました。
+Qiita デイリーいいね数ランクイン記事です。要チェックですね。
 
 ## 今日の記事は
 
@@ -106,12 +107,13 @@ write ときたら read です。
 ```
 
 `~/.zsh_history` は適宜置き換えてください。`$HISTFILE` で確認できると思います。
-`fc` は `history` の実態です。詳しくは `man zshall` で。
+`fc` は `history` の実態です。インタラクティブシェル向けの機能を別の場所で利用するには若干工夫が必要です (たぶん)
+履歴ファイルを読み込ませ出力させたものを Vim で読む感じです。`fc` については `man zshall` で。
 
 ## まとめ
 
 Vim を使いこなすのは大変ですが、外部との連携さえできれば、それらをシームレスに有効活用できます。
-今日は書ききれませんでしたが、オススメは jq や pandoc などです。うまくやり取りできれば、ターミナルとの行き来が無くなるので、いわゆる「Vim でやった方が早い」率がさらに高まります。
+今日は書ききれませんでしたが、オススメは jq や pandoc などです。うまくやり取りできれば、ターミナルとの行き来が無くなるので、いわゆる「Vim でやった方が早い」率がさらに高まります 😁
 
 ## 明日は
 
